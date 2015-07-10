@@ -1,17 +1,62 @@
 package io.rong.imkit.demo.eight;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements View.OnClickListener{
+
+    Button mSendTxtMsgBtn;
+    Button mSendImgMsgBtn;
+    Button mSendVoiceMsgBtn;
+    Button mSendRichTextMsgBtn;
+    Button mSendLocationMsgBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+        mSendTxtMsgBtn = (Button) findViewById(android.R.id.button1);
+        mSendImgMsgBtn = (Button) findViewById(android.R.id.button2);
+        mSendVoiceMsgBtn = (Button) findViewById(R.id.button3);
+        mSendRichTextMsgBtn = (Button) findViewById(R.id.button4);
+        mSendLocationMsgBtn = (Button) findViewById(R.id.button5);
+
+        mSendTxtMsgBtn.setOnClickListener(this);
+        mSendImgMsgBtn.setOnClickListener(this);
+        mSendVoiceMsgBtn.setOnClickListener(this);
+        mSendRichTextMsgBtn.setOnClickListener(this);
+        mSendLocationMsgBtn.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()){
+
+            case android.R.id.button1:
+                SendMessageUtils.sendTextMessage(this);
+                break;
+            case android.R.id.button2:
+                break;
+            case R.id.button3:
+                break;
+            case R.id.button4:
+                break;
+            case R.id.button5:
+                break;
+            default:
+                break;
+        }
+
     }
 
     @Override
