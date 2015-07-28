@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.rong.app10">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.StartConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.StartConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.StartSubConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!--0000000-->
+
+        <activity
+            android:name=".conversationlist.ConversationListStaticActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/conversationlist"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".conversationlist.ConversationListDynamicActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/conversationlist"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".conversationlist.ConversationListDynamicFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/conversationlist"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".conversationlist.ConversationListStaticFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="io.rong.app10"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".conversation.ConversationStaticActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/conversation/"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".conversation.ConversationDynamicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/conversation/"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".conversation.ConversationStaticFragmentActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/conversation/"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".conversation.ConversationDynamicFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="io.rong.app10"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".subconversationlist.SubConversationListDynamicActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data-->
+            <!--android:host="io.rong.app10"-->
+            <!--android:pathPrefix="/subconversationlist"-->
+            <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".subconversationlist.SubConversationListStaticActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="io.rong.app10"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
